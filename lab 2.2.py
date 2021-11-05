@@ -13,7 +13,7 @@ if choose == 'a':
  print(d)
 elif choose == 'b':
     text1=str(input("Enter text: "))
-    SplitString1= sorted(text1.split())
+    SplitString1= sorted(list(set(text1.split())))
     print(SplitString1)
 else:
     print('Uncorrect input')
